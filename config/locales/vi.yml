@@ -1,0 +1,40 @@
+vi:
+  bigTitle: "App hướng dẫn Ruby on Rails"
+  ruby_on_rails_tutorial: "Hướng dẫn về Ruby on Rails"
+  book: "sách"
+  screencast: "video"
+  header:
+    title: "SAMPLE APP"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    logIn: "Đăng nhập"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+  footer:
+    about: "Về chúng tôi"
+    contact: "Liên hệ"
+    news: "Tin tức"
+    description_html: "%{tutorial_link} của %{author}"
+  home:
+    title: "Trang chủ"
+    header: "Chào mừng đến với Sample App"
+    description_html: "Đây là trang chủ của %{tutorial_link} ứng dụng mẫu."
+    signUp: "Đăng ký ngay!"
+  help:
+    title: "Trợ giúp"
+    description_html: "Nhận sự giúp đỡ về  Ruby on Rails tại %{tutorial_help_link}.
+     Nhận sự giúp đỡ về  ứng dụng mẫu này tại %{tutorial_book}"
+    tutorial_help_page: "trang hướng dẫn Rails Tutorial"
+    tutorial_book: "sách hướng dẫn Ruby on Rails"
+  about:
+    title: "Về chúng tôi"
+    description_html: "%{tutorial_link}, một phần của nhóm hướng dẫn %{learn_enough_link},
+    là một loạt %{tutorial_book} và %{screencast_link} hướng dẫn phát triển web với %{ruby_on_rails_link}.
+    Đây là ứng dụng mẫu cho hướng dẫn."
+  contact:
+    title: "Liên hệ"
+    description_html: "Liên hệ với hướng dẫn Ruby on Rails về ứng dụng mẫu tại %{contact_page_link}."
+    contact_page: "trang liên hệ"
+  signup:
+    button: "Đăng Ký"
+    description_html: "Đây là trang đăng ký cho người mới"
