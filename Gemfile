@@ -11,6 +11,9 @@ gem "webpacker", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.4", require: false
+gem "bootstrap-sass", "3.4.1"
+gem "rails-i18n"
+gem "config"
 
 group :development, :test do # Với phiên bản ruby 3.0 và rails 6 trở lên
   gem "rubocop", "~> 1.26", require: false

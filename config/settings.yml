@@ -1,0 +1,9 @@
+ruby_home: "https://www.railstutorial.org/"
+help: 
+  page: "https://github.com/learnenough/rails_tutorial_sample_app_7th_ed/blob/main/HELP.md"
+  book: "https://www.railstutorial.org/book"
+contact: "https://www.railstutorial.org/contact"
+learn_enough: "https://www.learnenough.com/"
+screencast: "https://www.railstutorial.org/#landing_pricing"
+news: "https://news.railstutorial.org/"
+author: "https://www.michaelhartl.com/"

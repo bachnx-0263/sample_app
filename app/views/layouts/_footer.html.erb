@@ -1,0 +1,15 @@
+<footer class="footer">
+   <small>
+    <%= t("footer.description_html",
+    tutorial_link: link_to(t("ruby_on_rails_tutorial"), Settings.home),
+    author: link_to("MICHAEL HARTL", Settings.author)
+    )%>
+   </small>
+   <nav>
+      <ul>
+         <li><%= link_to t("footer.about"), about_path %></li>
+         <li><%= link_to t("footer.contact"), contact_path %></li>
+         <li><%= link_to t("footer.news"), Settings.news%></li>
+      </ul>
+   </nav>
+</footer>
