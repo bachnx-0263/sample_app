@@ -38,3 +38,18 @@ vi:
   signup:
     button: "Đăng Ký"
     description_html: "Đây là trang đăng ký cho người mới"
+  error:
+    description_html: "Có tổng cộng"
+    count:
+      one: "1 lỗi"
+      other: "%{count} lỗi"
+  flash:
+    success: "Chào mừng đến với ứng dụng mẫu"
+  form:
+    name: "Tên"
+    email: "Email"
+    password: "Mật Khẩu"
+    confirmation: "Nhập lại mật khẩu"
+    submit: "Tạo tài khoản"
+  user:
+    error: "Người dùng không tồn tại"

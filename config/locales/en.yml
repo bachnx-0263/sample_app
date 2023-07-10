@@ -71,3 +71,18 @@ en:
   signup:
     button: "Sign Up"
     description_html: "This will be a signup page for new users."
+  error:
+    description_html: "There are total"
+    count:
+      one: 1 error
+      other: "%{count} errors"
+  flash:
+    success: "Welcome to the Sample App!"
+  form:
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    confirmation: "Confirmation"
+    submit: "Create my account"
+  user:
+    error: "User doesn't exist"
