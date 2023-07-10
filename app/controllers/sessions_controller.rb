@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
     if @user.authenticate params[:session][:password]
       # Log the user in and redirect to the user's show page.
       log_in user
-      redirect_to user_url(@user)
+      set_remember @user
+      redirect_to @user
     else
       # Create an error message.
       flash.now[:danger] = t "login.error"
@@ -30,6 +31,10 @@ class SessionsController < ApplicationController
     return if @user
 
     flash[:danger] = t "user.error"
-    redirect_to root_path
+    redirect_to login_path
+  end
+
+  def set_remember user
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
   end
 end
