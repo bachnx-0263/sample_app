@@ -43,6 +43,11 @@ en:
     logIn: "Log in"
     english: "English"
     vietnamese: "Vietnamese"
+    account: "Account"
+    profile: "Profile"
+    setting: "Settings"
+    logout: "Logout"
+    users: "Users"
   footer:
     about: "About"
     contact: "Contact"
@@ -86,3 +91,7 @@ en:
     submit: "Create my account"
   user:
     error: "User doesn't exist"
+    new: "New user?"
+  login:
+    title: "Login"
+    error: "invalid_email_password_combination"
