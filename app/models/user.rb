@@ -12,11 +12,10 @@ class User < ApplicationRecord
             },
             format: {with: VALID_EMAIL_REGEX},
             uniqueness: {case_sensitive: false}
-  validates :name, presence: true,
-            length: {maximum: Settings.models.user.digits.length_10}
+  validates :name, presence: true
   validates :password, presence: true,
             length: {minimum: Settings.models.user.digits.length_6},
-            if: :password
+            if: :password, allow_nil: true
 
   has_secure_password
 
