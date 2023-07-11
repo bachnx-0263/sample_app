@@ -10,6 +10,11 @@ vi:
     logIn: "Đăng nhập"
     english: "Tiếng Anh"
     vietnamese: "Tiếng Việt"
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    users: "Người dùng"
   footer:
     about: "Về chúng tôi"
     contact: "Liên hệ"
@@ -53,3 +58,7 @@ vi:
     submit: "Tạo tài khoản"
   user:
     error: "Người dùng không tồn tại"
+    new: "Người dùng mới?"
+  login:
+    title: "Đăng Nhập"
+    error: "Tài khoản hoặc mật khẩu không trùng khớp"
