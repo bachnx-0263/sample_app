@@ -1,0 +1,12 @@
+<%= form_for @micropost do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: t("home.post.new") %>
+  </div>
+  <%= f.submit t("form.post"), class: "btn btn-primary" %>
+  <span class="image">
+    <%= f.file_field :image %>
+  </span>
+<% end %>
+
+<%= javascript_pack_tag("micropost_alert") %>
