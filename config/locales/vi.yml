@@ -93,6 +93,7 @@ vi:
     error: "Người dùng không tồn tại"
     new: "Người dùng mới?"
     no_post: "Bạn chưa có bài viết nào"
+    not_found: "Không tìm thấy người dùng này"
   users:
     title: "Tất cả người dùng"
     delete: "Xóa"
@@ -135,6 +136,7 @@ vi:
     invalid: "File phải có định dạng ảnh"
     size_invalid: "Ảnh nên có dung lượng dưới 5MB"
   micropost:
+    title: "Bài viết:"
     delete: "Bài viết đã xóa"
     delete_fail: "Không thể xóa bài viết"
     posted_at: "Đăng %{time} trước"
@@ -144,3 +146,10 @@ vi:
     count: "Bài viết %{count}"
     oversize: "Dung lượng ảnh tối đa là 5MB. Hãy chọn một ảnh bé hơn"
     notfound: "Không tìm thấy bài viết"
+  stats:
+    following:
+      title: "Đang theo dõi"
+      button: "Theo dõi"
+      unfollow_button: "Hủy theo dõi"
+    followers:
+      title: "Người theo dõi"

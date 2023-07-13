@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update]
-  before_action :load_user, only: [:edit, :show, :update, :destroy]
+  before_action :load_user,
+                except: [:index, :new, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
@@ -48,6 +49,20 @@ class UsersController < ApplicationController
     else
       flash[:danger] = t "flash.delete_fail"
     end
+  end
+
+  def following
+    @title = t "stats.following.button"
+    @pagy, @users = pagy(@user.following,
+                         items: Settings.pagination.per_page_10)
+    render :show_follow
+  end
+
+  def followers
+    @title = t "stats.following.ufollow_button"
+    @pagy, @users = pagy(@user.followers,
+                         items: Settings.pagination.per_page_10)
+    render :show_follow
   end
 
   private

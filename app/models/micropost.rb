@@ -3,9 +3,10 @@ class Micropost < ApplicationRecord
   has_one_attached :image
   scope :newest, ->{order created_at: :desc}
   scope :by_user_id, ->(id){where user_id: id}
+  scope :by_followers_and_self_id, ->(ids){where user_id: ids}
   validates :content, presence: true,
                       length: {maximum: Settings.models.post.digits.length_140}
-  validates :image, content_type: {in: %w(image/jpeg image/gif image/png),
+  validates :image, content_type: {in: %w(image/jpeg image/gif image/png image/jpg),
                                    message: I18n.t("image.invalid")},
                     size: {less_than: 5.megabytes,
                            message: I18n.t("image.size_invalid")}

@@ -126,6 +126,7 @@ en:
     error: "User doesn't exist"
     new: "New user?"
     no_post: "You have no post"
+    not_found: "User not found"
   users:
     title: "All Users"
     delete: "Delete"
@@ -168,6 +169,7 @@ en:
     invalid: "Must be a valid image format"
     size_invalid: "should be less than 5MB"
   micropost:
+    title: "Micropost:"
     delete: "Micropost deleted"
     delete_fail: "Failed to delete micropost"
     posted_at: "Post %{time} ago"
@@ -177,3 +179,10 @@ en:
     count: "Microposts %{count}"
     oversize: "Maximum file size is 5MB. Please choose a smaller file"
     notfound: "Micropost not found"
+  stats:
+    following:
+      title: "Following"
+      button: "Follow"
+      unfollow_button: "Unfollow"
+    followers:
+      title: "Followers"
