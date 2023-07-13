@@ -24,7 +24,10 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy(@user.microposts.all.newest,
+                              items: Settings.pagination.per_page_10)
+  end
 
   def edit; end
 
@@ -63,14 +66,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t "user.error"
     redirect_to login_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "flash.require_login"
-    redirect_to root_path
   end
 
   def correct_user
