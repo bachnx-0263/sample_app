@@ -83,15 +83,29 @@ en:
       other: "%{count} errors"
   flash:
     success: "Welcome to the Sample App!"
+    saved: "Profile updated"
+    require_login: "Please login"
+    delete: "User deleted"
+    delete_fail: "Failed to delete user"
+    user_invalid: "Invalid user"
+    not_admin: "Only admin can do this"
   form:
     name: "Name"
     email: "Email"
     password: "Password"
     confirmation: "Confirmation"
     submit: "Create my account"
+    save: "Save change"
+    change: "Change"
   user:
     error: "User doesn't exist"
     new: "New user?"
+  users:
+    title: "All Users"
+    delete: "Delete"
+    confirm: "You sure?"
   login:
     title: "Login"
     error: "invalid_email_password_combination"
+  edit:
+    title: "Edit"

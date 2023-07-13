@@ -15,3 +15,9 @@ models:
       length_20: 20
       length_10: 10
       length_6: 6
+
+pagination:
+  per_page_10: 10
+
+avatar:
+  size_50: 50

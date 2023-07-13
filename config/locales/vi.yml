@@ -50,15 +50,29 @@ vi:
       other: "%{count} lỗi"
   flash:
     success: "Chào mừng đến với ứng dụng mẫu"
+    saved: "Hồ sơ đã được cập nhật"
+    require_login: "Hãy đăng nhập để tiếp tục"
+    delete: "Đã xóa người dùng"
+    delete_fail: "Không thể xóa người dùng"
+    user_invalid: "Người dùng không hợp lệ"
+    not_admin: "Chỉ quản trị viên mới được thực hiện hành động này"
   form:
     name: "Tên"
     email: "Email"
     password: "Mật Khẩu"
     confirmation: "Nhập lại mật khẩu"
     submit: "Tạo tài khoản"
+    save: "Lưu thay đổi"
+    change: "Thay đổi"
   user:
     error: "Người dùng không tồn tại"
     new: "Người dùng mới?"
+  users:
+    title: "Tất cả người dùng"
+    delete: "Xóa"
+    confirm: "Chắc chưa?"
   login:
     title: "Đăng Nhập"
     error: "Tài khoản hoặc mật khẩu không trùng khớp"
+  edit:
+    title: "Chỉnh sửa"
