@@ -76,6 +76,13 @@ en:
   signup:
     button: "Sign Up"
     description_html: "This will be a signup page for new users."
+    mail_verify: "Please check your email to activate your account."
+    mail:
+      subject: "Account Activation"
+      greeting: "Welcome to the Sample App! Click on the link below to activate your account"
+      active: "Activate"
+      hi: "Hi %{name}"
+    fail: "Signup failed"
   error:
     description_html: "There are total"
     count:
@@ -86,9 +93,11 @@ en:
     saved: "Profile updated"
     require_login: "Please login"
     delete: "User deleted"
-    delete_fail: "Failed to delete user"
-    user_invalid: "Invalid user"
-    not_admin: "Only admin can do this"
+    activated: "Account activated"
+    invalid_link: "Invalid activation link"
+    reset_password: "Email sent with password reset instructions"
+    email_invalid: "Email address not found"
+    not_activated: "Account not activated. Check your email for the activation link"
   form:
     name: "Name"
     email: "Email"
@@ -97,15 +106,26 @@ en:
     submit: "Create my account"
     save: "Save change"
     change: "Change"
+    confirm: "Submit"
+    update_password: "Update Password"
   user:
     error: "User doesn't exist"
     new: "New user?"
   users:
     title: "All Users"
-    delete: "Delete"
-    confirm: "You sure?"
   login:
     title: "Login"
     error: "invalid_email_password_combination"
+  forgot_password:
+    title: "Forgot Password"
+    subject: "Reset Password"
+    greeting: "To reset your password click the link below"
+    expire: "This link will expire in two hours."
+    warn: "If you did not request your password to be reset, please ignore this email and your password will stay as it is"
+  reset_password:
+    title: "Reset Password"
+    expired: "Password reset has expired"
+    empty: "Password can't be empty"
+    success: "Password has been reset"
   edit:
     title: "Edit"

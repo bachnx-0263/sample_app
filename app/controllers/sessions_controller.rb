@@ -1,16 +1,11 @@
 class SessionsController < ApplicationController
-  attr_accessor :user
-
   before_action :load_user, only: :create
 
   def new; end
 
   def create
     if @user.authenticate params[:session][:password]
-      # Log the user in and redirect to the user's show page.
-      log_in user
-      set_remember @user
-      redirect_to @user
+      log_in_user
     else
       # Create an error message.
       flash.now[:danger] = t "login.error"
@@ -36,5 +31,16 @@ class SessionsController < ApplicationController
 
   def set_remember user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+  end
+
+  def log_in_user
+    if @user.activated?
+      log_in @user
+      set_remember @user
+      redirect_back_or @user
+    else
+      flash[:warning] = t "flash.not_activated"
+      redirect_to root_url
+    end
   end
 end
