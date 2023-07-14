@@ -94,5 +94,6 @@ vi:
     expired: "Đường dẫn đã quá hạn"
     empty: "Mật khẩu không được để trống"
     success: "Mật khẩu đã được cập nhật"
+    user_invalid: "Người dùng không hợp lệ"
   edit:
     title: "Chỉnh sửa"

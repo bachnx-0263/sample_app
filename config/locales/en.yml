@@ -127,5 +127,6 @@ en:
     expired: "Password reset has expired"
     empty: "Password can't be empty"
     success: "Password has been reset"
+    user_invalid: "Invalid user"
   edit:
     title: "Edit"
