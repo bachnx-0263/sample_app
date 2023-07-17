@@ -25,6 +25,11 @@ vi:
     header: "Chào mừng đến với Sample App"
     description_html: "Đây là trang chủ của %{tutorial_link} ứng dụng mẫu."
     signUp: "Đăng ký ngay!"
+    post:
+      title: "Nội dung"
+      one: "1 bài viết"
+      other: "%{count} bài viết"
+      new: "Tạo bài viết mới..."
   help:
     title: "Trợ giúp"
     description_html: "Nhận sự giúp đỡ về  Ruby on Rails tại %{tutorial_help_link}.
@@ -65,6 +70,14 @@ vi:
     reset_password: "Email hướng dẫn thay đổi mật khẩu đã được gửi"
     email_invalid: "Email không tồn tại"
     not_activated: "Tài khoản chưa kích hoạt, hãy kiểm tra email của bạn"
+    delete_fail: "Không thể xóa người dùng"
+    user_invalid: "Người dùng không hợp lệ"
+    not_admin: "Chỉ quản trị viên mới được thực hiện hành động này"
+    activated: "Tài khoản đã được kích hoạt"
+    invalid_link: "Đường dẫn kích hoạt không hợp lệ"
+    reset_password: "Email hướng dẫn thay đổi mật khẩu đã được gửi"
+    email_invalid: "Email không tồn tại"
+    post_created: "Bài viết đã được tạo"
   form:
     name: "Tên"
     email: "Email"
@@ -74,12 +87,16 @@ vi:
     save: "Lưu thay đổi"
     change: "Thay đổi"
     confirm: "Xác nhận"
+    post: "Đăng"
     update_password: "Cập nhật mật khẩu"
   user:
     error: "Người dùng không tồn tại"
     new: "Người dùng mới?"
+    no_post: "Bạn chưa có bài viết nào"
   users:
     title: "Tất cả người dùng"
+    delete: "Xóa"
+    confirm: "Chắc chưa?"
   login:
     title: "Đăng Nhập"
     error: "Tài khoản hoặc mật khẩu không trùng khớp"
@@ -95,5 +112,35 @@ vi:
     empty: "Mật khẩu không được để trống"
     success: "Mật khẩu đã được cập nhật"
     user_invalid: "Người dùng không hợp lệ"
+    delete: "Xóa"
+    confirm: "Chắc chưa?"
+  login:
+    title: "Đăng Nhập"
+    error: "Tài khoản hoặc mật khẩu không trùng khớp"
+  forgot_password:
+    title: "Quên mật khẩu"
+    subject: "Thay đổi mật khẩu"
+    greeting: "Bấm vào đường dẫn phía dưới để thay đổi mật khẩu"
+    expire: "Đường dẫn sẽ hết hạn trong vòng 2 tiếng."
+    warn: "Nếu bạn không yêu cầu thay đổi mật khẩu, hãy bỏ qua mail này"
+  reset_password:
+    title: "Thay đổi mật khẩu"
+    expired: "Đường dẫn đã quá hạn"
+    empty: "Mật khẩu không được để trống"
+    success: "Mật khẩu đã được cập nhật"
   edit:
     title: "Chỉnh sửa"
+    profile: "Chỉnh sửa hồ sơ"
+  image:
+    invalid: "File phải có định dạng ảnh"
+    size_invalid: "Ảnh nên có dung lượng dưới 5MB"
+  micropost:
+    delete: "Bài viết đã xóa"
+    delete_fail: "Không thể xóa bài viết"
+    posted_at: "Đăng %{time} trước"
+    delete_button: "Xóa"
+    confirm: "Chắc chưa?"
+    feed: "Danh sách bài viết"
+    count: "Bài viết %{count}"
+    oversize: "Dung lượng ảnh tối đa là 5MB. Hãy chọn một ảnh bé hơn"
+    notfound: "Không tìm thấy bài viết"
