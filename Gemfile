@@ -3,13 +3,17 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "3.0.2"
 
+gem "active_storage_validations", "1.0.4"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "faker", ">= 3.2.0"
 gem "figaro"
+gem "i18n-js", "~> 4.0"
+gem "image_processing", "1.12.2"
 gem "jbuilder", "~> 2.7"
+gem "mini_magick", "4.9.5"
 gem "mysql2", "~> 0.5"
 gem "pagy"
 gem "puma", "~> 5.0"
@@ -18,10 +22,6 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
-gem "active_storage_validations", "1.0.4"
-gem "mini_magick", "4.9.5"
-gem "image_processing", "1.12.2"
-gem "i18n-js", "~> 4.0"
 
 group :development, :test do # Với phiên bản ruby 3.0 và rails 6 trở lên
   gem "rubocop", "~> 1.26", require: false
